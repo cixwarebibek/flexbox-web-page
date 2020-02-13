@@ -70,6 +70,7 @@ input{
     border:2px solid yellow;
     color: yellow;
     outline: none;
+
 }
 .center-block{
     display:flex;
@@ -104,7 +105,8 @@ input{
 }
 .block2 div{
     Padding:0 40px;
-    width:22%;
+    width:10%;
+    /* flex-wrap: 150px; */
 }
 .footer b{
     font-size: 90px;
@@ -157,9 +159,7 @@ hr{
     /* background-color: black; */
     
 }
-.a hover{
-    color: yellow;
-}
+
 #home{
     color: yellow;
 }
