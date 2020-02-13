@@ -82,10 +82,13 @@ input{
 .block2{
     margin-top: 50px;
     display:flex;
+    flex-wrap: wrap;
     text-align: center;
     /* font-size: medium; */
     
 }
+
+
 .block3{
     background-color:rgb(241, 241, 241);  
     display:flex;
@@ -102,10 +105,12 @@ input{
 .block4{
     background-color: rgb(241, 241, 241);
     color:rgb(104, 104, 104);
+  
 }
 .block2 div{
     Padding:0 40px;
-    width:10%;
+    width:35%;
+    flex-basis: 250px;
     /* flex-wrap: 150px; */
 }
 .footer b{
@@ -159,7 +164,85 @@ hr{
     /* background-color: black; */
     
 }
+/* .heading{
+    display: flex;
+    display: inline;
+    flex-direction: row;
+} */
 
 #home{
-    color: yellow;
+    /* color: white; */
 }
+button:hover{
+    color: black;
+    background-color: red;
+}
+input:hover{
+    color:black;
+    background-color:yellow;
+    border-radius: 15px;
+    /* padding: 5px; */
+
+}
+/* media query */
+@media screen and (max-width:700px)
+{
+    /* .class block4{
+        background-color: red;
+    } */
+    body{
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        /* flex-basis: 1000px; */
+    }
+    .heading{
+        display: flex;
+        display: inline;
+        flex-direction: row;
+        width: 100%;
+    }
+   .heading .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: block;
+       
+    }
+    .block2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+
+    }
+    .block4{
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .leftbtn{
+        margin-top: 20px;
+    }
+    .block1{
+        height: 500px;
+    }
+    .heading h4{
+        flex-direction: column;
+        align-items: cebter;
+        justify-content: center;
+    }
+    #scroll{
+        text-align: center;
+        margin-left: 200px;
+        margin-top: 3px;
+        color: white;
+        width:70px;
+        size: 800px;
+        font-weight: bold;
+    }
+    
+
+
+} 
